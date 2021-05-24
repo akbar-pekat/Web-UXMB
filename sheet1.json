@@ -1,112 +1,84 @@
 {
   "sheet1": [
     {
-      "pin": "EaprPyVE",
-      "nama": "Rizky Anandra",
-      "role": "Coordinator",
-      "tim": "-",
-      "nilai": "-",
+      "pin": "CCLJ3RFQ",
+      "nama": "akbarpekat",
+      "role": "Content Creator",
+      "tim": "Committee",
       "urlSertifikat": "-",
       "id": 2
     },
     {
-      "pin": "u2rS28VZ",
-      "nama": "akbarpekat",
+      "pin": "CI6ILJCK",
+      "nama": "mluthfi3d",
       "role": "Content Creator",
-      "tim": "-",
-      "nilai": "-",
+      "tim": "Committee",
       "urlSertifikat": "-",
       "id": 3
     },
     {
-      "pin": "tSr9kWkb",
-      "nama": "mluthfi3d",
-      "role": "Content Creator",
-      "tim": "-",
-      "nilai": "-",
+      "pin": "WGXO0ZT1",
+      "nama": "Iko_setiawan",
+      "role": "Public Relation",
+      "tim": "Committee",
       "urlSertifikat": "-",
       "id": 4
     },
     {
-      "pin": "rLEhsM7y",
-      "nama": "Iko_setiawan",
+      "pin": "7XHUZA6Y",
+      "nama": "prescylia",
       "role": "Public Relation",
-      "tim": "-",
-      "nilai": "-",
+      "tim": "Committee",
       "urlSertifikat": "-",
       "id": 5
     },
     {
-      "pin": "gnRBj9et",
-      "nama": "prescylia",
-      "role": "Public Relation",
-      "tim": "-",
-      "nilai": "-",
+      "pin": "9J8XP36E",
+      "nama": "rzumarli",
+      "role": "Curriculum Drafter",
+      "tim": "Committee",
       "urlSertifikat": "-",
       "id": 6
     },
     {
-      "pin": "76nzECeH",
-      "nama": "rzumarli",
+      "pin": "GA4USIGL",
+      "nama": "niyuavril",
       "role": "Curriculum Drafter",
-      "tim": "-",
-      "nilai": "-",
+      "tim": "Committee",
       "urlSertifikat": "-",
       "id": 7
     },
     {
-      "pin": "xzeg8D5V",
-      "nama": "niyuavril",
-      "role": "Curriculum Drafter",
-      "tim": "-",
-      "nilai": "-",
+      "pin": "2WD33Z0K",
+      "nama": "Sinto Wahid",
+      "role": "Social Media Admin",
+      "tim": "Committee",
       "urlSertifikat": "-",
       "id": 8
     },
     {
-      "pin": "dR44eEP9",
-      "nama": "Sinto Wahid",
+      "pin": "SOB3PB63",
+      "nama": "clairyvaxe",
       "role": "Social Media Admin",
-      "tim": "-",
-      "nilai": "-",
+      "tim": "Committee",
       "urlSertifikat": "-",
       "id": 9
     },
     {
-      "pin": "LdrF4xva",
-      "nama": "clairyvaxe",
-      "role": "Social Media Admin",
-      "tim": "-",
-      "nilai": "-",
+      "pin": "HQJL240V",
+      "nama": "DenesaEkalista",
+      "role": "Event Host",
+      "tim": "Committee",
       "urlSertifikat": "-",
       "id": 10
     },
     {
-      "pin": "U4smUS7H",
-      "nama": "DenesaEkalista",
-      "role": "Event Host",
-      "tim": "-",
-      "nilai": "-",
-      "urlSertifikat": "-",
-      "id": 11
-    },
-    {
-      "pin": "rKktmpxa",
+      "pin": "AO0OLD0K",
       "nama": "dareenfirandi",
       "role": "Event Host",
-      "tim": "-",
-      "nilai": "-",
+      "tim": "Committee",
       "urlSertifikat": "-",
-      "id": 12
-    },
-    {
-      "pin": "RwpdFJNZ",
-      "nama": "Ravi Mahfunda",
-      "role": "Founder",
-      "tim": "-",
-      "nilai": "-",
-      "urlSertifikat": "-",
-      "id": 13
+      "id": 11
     }
   ]
 }
