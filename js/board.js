@@ -43,7 +43,7 @@ $("#keluarbtn").click(function () {
                 isDisabled: false,
                 action: function (hubPanitia) {
                     localStorage.removeItem("datakey");
-                    window.location.replace("login.html");
+                    window.location.replace("/");
                 }
             },
         }
