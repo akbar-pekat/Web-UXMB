@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Dashboard | UX Mini Bootcamp by Design Jam</title>
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/dji-icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                    <div class="logo">
+                        <img src="img/dji-logo.svg" class="d-none d-sm-inline-block" height="40"
+                            alt="Design Jam Indonesia">&nbsp;&nbsp;
+                        <img src="img/uxmb-logo.svg" height="40" alt="UX Mini Bootcamp">
+                    </div>
+                    <div class="topbar-divider d-none d-sm-block"></div>
+                    <div class="logo d-none d-sm-inline-block">
+                        <span class="mr-2 text-gray-600 small">In Collaboration with:</span>
+                        <img src="img/pwc-logo.jpg" class="d-none d-sm-inline-block" height="40"
+                            alt="Design Jam Indonesia">&nbsp;&nbsp;
+                        <span class="mr-2 text-gray-600 small">Podcast Warung Copy</span>
+                    </div>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg"
+                                    id="photouser">&nbsp;&nbsp;&nbsp;
+                                <span class="mr-2 text-gray-600 small d-none d-sm-inline-block username"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="topbar-divider d-none d-sm-block"></div>
+                    <a href="#" class="btn btn-white" id="keluarbtn">
+                        <span class="text">Keluar</span>
+                    </a>
+                </nav>
+                <div class="container-fluid">
+                    <h1 class="h3 mb-4 text-gray-800">Dashboard</h1>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Sertifikat</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div id="sertifyes" hidden>
+                                        Halo <span class="username"></span>, Kami ucapkan terima kasih sebelumnya telah
+                                        mengikuti UX Mini Bootcamp, berikut kamu dapat mengunduh sertifikat pada tombol
+                                        dibawah</small><br>
+                                        <a href="#" class="btn btn-success btn-icon-split mt-2" id="sertifbtn">
+                                            <span class="icon text-white-50">
+                                                <i class="fas fa-certificate"></i>
+                                            </span>
+                                            <span class="text">Download Sertifikat</span>
+                                        </a>
+                                    </div>
+                                    <div id="sertifno" hidden>
+                                        Halo <span class="username"></span>, Kami ucapkan terima kasih
+                                        sebelumnya telah mengikuti UX Mini Bootcamp, tetapi berdasarkan
+                                        keputusan panitia dan point yang diberikan oleh mentor kamu. Kamu belum
+                                        bisa mendapatkan sertifikat.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Tutorial!</h6>
+                                </div>
+                                <div class="card-body">
+                                    Cara upload sertifikat bootcamp di Linkedin
+                                    <ol>
+                                        <li>Pastiin kamu udah download dan baca sertifikatnya</li>
+                                        <li>Buka profil linkedin kamu</li>
+                                        <li class="text-muted small">Cari profil Akbar Wijaya lalu Follow (canda :v)
+                                        </li>
+                                        <li>Lalu scroll kebawah deh sampai nemu section Lisensi dan Sertifikasi </li>
+                                        <li>Klik tuh ikon +</li>
+                                        <li>Isi semua data yang diperlukan. Untuk ID Kredensial kamu isi pake ID yang terdapat di Sertifikatmu</li>
+                                        <li>lalu URL Kredensial isi dengan bootcamp.designjam.id/check/</li>
+                                        <li>Klik simpan</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Rekaman Video</h6>
+                                </div>
+                                <div class="card-body">
+                                    Rekaman Video Bootcamp
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; 2021 | UX Mini Bootcamp Design Jam Indonesia</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCZEib6S2Cn7Vv3dKWQfe-mf1OENITScds",
+            authDomain: "uxmbdji.firebaseapp.com",
+            databaseURL: "https://uxmbdji-default-rtdb.firebaseio.com",
+            projectId: "uxmbdji",
+            storageBucket: "uxmbdji.appspot.com",
+            messagingSenderId: "1098888270082",
+            appId: "1:1098888270082:web:003fc85ac42a4a4b84321b",
+            measurementId: "G-7FEL6QCFHP"
+        };
+        firebase.initializeApp(firebaseConfig);
+        firebase.auth();
+        firebase.database();
+    </script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/sb-admin-2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+    <script src="js/board.js"></script>
+</body>
+
+</html>
