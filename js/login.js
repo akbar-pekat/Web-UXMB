@@ -77,6 +77,16 @@ function actionfirebase() {
                                         window.location.href = "https://www.instagram.com/akbarpekat";
                                     }
                                 },
+                                batalkan: {
+                        text: 'Batalkan',
+                        btnClass: 'btn-default',
+                        isHidden: false,
+                        isDisabled: false,
+                        action: function (batalkan) {
+                            $("#masukbtn").text("Masuk");
+                            $("#masukbtn").attr("disabled", false);
+                        }
+                    },
                             }
                         });
                     }
