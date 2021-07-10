@@ -1,12 +1,12 @@
-$("#caribtn").click(function () {
+$("#checkbtn").click(function () {
     var idkredensial = $("#idkredensialinput").val();
     if (idkredensial == "") {
         $.alert({
-            title: 'Kesalahan!',
-            content: 'Kolom ID Kredensial wajib diisi!',
+            title: 'Hey!',
+            content: "ID Kredensial field is required",
             buttons: {
                 oke: {
-                    text: 'Oke',
+                    text: 'Okay',
                     btnClass: 'btn-blue',
                     isHidden: false,
                     isDisabled: false,
@@ -14,30 +14,31 @@ $("#caribtn").click(function () {
             }
         });
     } else {
-        $("#caribtn").attr("disabled", true);
-        $("#caribtn").text("Loading");
+        $("#checkbtn").attr("disabled", true);
+        $("#checkbtn").text("Loading");
         actionfirebase();
     }
 });
 
 function actionfirebase() {
     var idk = $("#idkredensialinput").val();
+    console.log(idk)
     firebase.database().ref().orderByChild('idkredensial').equalTo(idk).on("value", function (snapshot) {
         //console.log(snapshot.val());
         var snapval = snapshot.val();
         if (snapval == null) {
             $.alert({
-                title: 'Kesalahan!',
-                content: 'Tidak terdapat Sertifikat dengan ID Kredensial tersebut!',
+                title: 'Not Found!',
+                content: 'There is no Certificate with that Credential ID!',
                 buttons: {
                     oke: {
-                        text: 'Oke',
+                        text: 'Okay',
                         btnClass: 'btn-blue',
                         isHidden: false,
                         isDisabled: false,
                         action: function (hubPanitia) {
-                            $("#caribtn").text("Cari");
-                            $("#caribtn").attr("disabled", false);
+                            $("#checkbtn").text("Check");
+                            $("#checkbtn").attr("disabled", false);
                         }
                     },
                 }
@@ -49,20 +50,20 @@ function actionfirebase() {
                     const data = snapshot.val();
                     var namalengkap = data.namalengkap;
                     var tipe = data.tipe;
-                    var idkredensial= data.idkredensial;
-                    var message = "Sertifikat dengan ID Kredensial: "+idkredensial+" tercatat atas nama "+namalengkap+" ("+tipe+")."
+                    var idkredensial = data.idkredensial;
+                    var message = "Certificate with Credential ID: " + idkredensial + " registered in the name <b>" + namalengkap + "</b> as " + tipe;
                     $.alert({
-                        title: 'Informasi',
+                        title: 'Information',
                         content: message,
                         buttons: {
                             oke: {
-                                text: 'Oke',
+                                text: 'Okay',
                                 btnClass: 'btn-blue',
                                 isHidden: false,
                                 isDisabled: false,
                                 action: function (hubPanitia) {
-                                    $("#caribtn").text("Cari");
-                                    $("#caribtn").attr("disabled", false);
+                                    $("#checkbtn").text("Check");
+                                    $("#checkbtn").attr("disabled", false);
                                 }
                             },
                         }
