@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="UX Mini Bootcamp by Design Jam Indonesia">
+    <meta name="author" content="UX Mini Bootcamp by Design Jam Indonesia">
+    <title>Dashboard | UX Mini Bootcamp</title>
+    <link rel="shortcut icon" href="img/dji-icon.svg" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+    <link href="https://unpkg.com/@videojs/themes@1/dist/sea/index.css" rel="stylesheet">
+    <style>
+        :root {
+            --plyr-color-main: #1533C9;
+            --plyr-range-fill-background: #FFBB02;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 50px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .thumbtn {
+            background-color: transparent;
+            border: none;
+            margin: 5px 0;
+        }
+
+        .thumbnail {
+            border: 3px solid #00000020;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .thumbnail-active {
+            border-color: #FFBB02;
+        }
+
+        .boxload {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            background-color: white;
+            z-index: 2;
+        }
+        .boxload img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%)translateX(-50%);
+        }
+    </style>
+</head>
+
+<body id="page-top" class="bg-light">
+    <div class="boxload">
+        <img src="https://media.tenor.com/images/d5015577b1133a47299b149b6fab1aaa/tenor.gif" alt="">
+    </div>
+    <div id="wrapper">
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+                <div class="mb-4">Must Follow <a href="https://www.instagram.com/akbarpekat"
+                        target="_blank">@akbarpekat</a> on Instagram</div>
+                <div class="container-fluid">
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Dashboard - <span class="username"></span></h1>
+                        <a href="#" id="signoutbtn" class="d-none d-sm-inline-block btn btn-sm btn-danger shadow-sm"><i
+                                class="fas fa-download fa-sm text-white-50"></i>Sign Out</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6 mb-4" id="sertifyes">
+                            <div class="card border-left-primary shadow py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                Certificate
+                                            </div>
+                                            <div class="p mb-0 text-gray-800">
+                                                Hello <span class="username"></span>, We thank you in advance
+                                                for participating in UX Mini Bootcamp, so here you can download the
+                                                certificate on the button below
+                                                <br><br>
+                                                <a id="sertifbtn" href="#"
+                                                    class="d-none d-sm-inline-block btn btn-sm btn-success shadow-sm">
+                                                    Download Certificate
+                                                </a>
+                                                <br><br>
+                                                <small>
+                                                    For validation, visit the following <a href="check.html">link</a>.
+                                                    Also embed it in the Certificate URL field on your LinkedIn
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4" id="sertifno" hidden>
+                            <div class="card border-left-danger shadow py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                                                Certificate
+                                            </div>
+                                            <div class="p mb-0 text-gray-800">
+                                                Hello <span class="username"></span>, We thank you in advance
+                                                for
+                                                participating in UX Mini Bootcamp, but based on the committee's decision
+                                                and the points given by your mentor. You can't get a certificate yet.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-md-9 mb-4">
+                            <div class="card shadow mb-4">
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Video Player</h6>
+                                </div>
+                                <div class="card-body p-0">
+                                    <video style="width: 100%;" id="vid1" class="video-js vjs-theme-sea" controls
+                                        width="640" height="264"
+                                        data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/embed/ua_pGryowyQ"}]}'>
+                                    </video>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card mb-4">
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Playlist Video</h6>
+                                </div>
+                                <div class="card-body" style="max-height: 400px; overflow-x: scroll;">
+                                    <button class="thumbtn">
+                                        <img src="img/Day1.png" id="Day1"
+                                            data-url="https://www.youtube.com/embed/ua_pGryowyQ"
+                                            class="thumbnail thumbnail-active">
+                                    </button>
+                                    <button class="thumbtn">
+                                        <img src="img/Day2.png" id="Day2"
+                                            data-url="https://www.youtube.com/embed/p93B5sA2cOY" class="thumbnail">
+                                    </button>
+                                    <button class="thumbtn">
+                                        <img src="img/Day4.png" id="Day4"
+                                            data-url="https://www.youtube.com/embed/e3XkI2LFuTM" class="thumbnail">
+                                    </button>
+                                    <button class="thumbtn">
+                                        <img src="img/Day5.png" id="Day5"
+                                            data-url="https://www.youtube.com/embed/fUjRVWvEfig" class="thumbnail">
+                                    </button>
+                                    <button class="thumbtn">
+                                        <img src="img/Day6.png" id="Day6"
+                                            data-url="https://www.youtube.com/embed/2eXPGQuIZA4" class="thumbnail">
+                                    </button>
+                                    <button class="thumbtn">
+                                        <img src="img/Day7.png" id="Day7"
+                                            data-url="https://www.youtube.com/embed/x-KQJf-BvJQ" class="thumbnail">
+                                    </button>
+                                    <button class="thumbtn">
+                                        <img src="img/Day8.png" id="Day8"
+                                            data-url="https://www.youtube.com/embed/0uiCvQI_pBU" class="thumbnail">
+                                    </button>
+                                    <button class="thumbtn">
+                                        <img src="img/Day10.png" id="Day10"
+                                            data-url="https://www.youtube.com/embed/A-9OtV_D2lE" class="thumbnail">
+                                    </button>
+                                    <button class="thumbtn">
+                                        <img src="img/Day11.png" id="Day11"
+                                            data-url="https://www.youtube.com/embed/oamUbuDCZxU" class="thumbnail">
+                                    </button>
+                                    <button class="thumbtn">
+                                        <img src="img/Day12.png" id="Day12"
+                                            data-url="https://www.youtube.com/embed/SjFqIApnHn0" class="thumbnail">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="sticky-footer bg-light">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; UX Mini Bootcamp by Design Jam Indonesia. 2021</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCZEib6S2Cn7Vv3dKWQfe-mf1OENITScds",
+            authDomain: "uxmbdji.firebaseapp.com",
+            databaseURL: "https://uxmbdji-default-rtdb.firebaseio.com",
+            projectId: "uxmbdji",
+            storageBucket: "uxmbdji.appspot.com",
+            messagingSenderId: "1098888270082",
+            appId: "1:1098888270082:web:003fc85ac42a4a4b84321b",
+            measurementId: "G-7FEL6QCFHP"
+        };
+        firebase.initializeApp(firebaseConfig);
+        firebase.database();
+    </script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/sb-admin-2.js"></script>
+    <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+    <script src="js/youtube.min.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+
+</html>

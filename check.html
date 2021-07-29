@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="UX Mini Bootcamp by Design Jam Indonesia">
+    <meta name="author" content="UX Mini Bootcamp by Design Jam Indonesia">
+    <title>Check | UX Mini Bootcamp</title>
+    <link rel="shortcut icon" href="img/dji-icon.svg" type="image/x-icon">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/dji-icon.svg" type="image/x-icon">
+</head>
+
+<body style="background-color: #1533C9;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-10 col-lg-12 col-md-9">
+                <div class="card o-hidden border-0 shadow-lg my-5">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <br><br><br>
+                                    <div class="text-center">
+                                        <h1 class="h4 text-gray-900 mb-4">Check Page!</h1>
+                                    </div>
+                                    <div class="user">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-control-user shadow-none"
+                                                id="inputsertifid" aria-describedby="emailHelp"
+                                                placeholder="Enter Your Certificate ID..." value="DJI-UXMB-">
+                                        </div>
+                                        <button id="checkbtn" class="btn btn-user btn-block">
+                                            Check
+                                        </button>
+                                        <br>
+                                        Want to login to the dashboard? Click <a href="index.html">this link</a>
+                                    </div>
+                                    <br><br><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCZEib6S2Cn7Vv3dKWQfe-mf1OENITScds",
+            authDomain: "uxmbdji.firebaseapp.com",
+            databaseURL: "https://uxmbdji-default-rtdb.firebaseio.com",
+            projectId: "uxmbdji",
+            storageBucket: "uxmbdji.appspot.com",
+            messagingSenderId: "1098888270082",
+            appId: "1:1098888270082:web:003fc85ac42a4a4b84321b",
+            measurementId: "G-7FEL6QCFHP"
+        };
+        firebase.initializeApp(firebaseConfig);
+        firebase.database();
+    </script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/sb-admin-2.js"></script>
+    <script src="js/check.js"></script>
+</body>
+
+</html>
